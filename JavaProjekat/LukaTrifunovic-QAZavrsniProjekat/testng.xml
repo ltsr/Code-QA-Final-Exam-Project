@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SwagLabs" >
+    <test name="Login" >
+        <classes>
+            <class name="swag.labs.tests.SwagLabsTestCases">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Logout">
+        <classes>
+            <class name="swag.labs.tests.SwagLabsTestCases">
+                <methods>
+                    <include name="logoutTest"/>
+                    <include name="loginNoUsernameTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Sorting">
+        <classes>
+            <class name="swag.labs.tests.SwagLabsTestCases">
+                <methods>
+                    <include name="sortingTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Checkout">
+        <classes>
+            <class name="swag.labs.tests.SwagLabsTestCases">
+                <methods>
+                    <include name="checkoutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
